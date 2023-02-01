@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        </head>
+        <body>
+            <form>
+            <fieldset>
+                <label for="nb1">Nombre1</label>
+                <input type="number" name"nb1">
+            </fieldset>
+            
+            <fieldset>
+                <label for="nb2">Nombre2</label>
+                <input type="number" name"nb2">
+            </fieldset>
+    
+            <select name="calculator" id="clclt">
+    <option value="">--Please choose an option--</option>
+    <option value="Multiplication">Multiplication</option>
+    <option value="Division">Division</option>
+    <option value="Addition">Addition</option>
+    <option value="Soustraction">Soustraction</option>
+    <option value="Modulo">Modulo</option>
+</select>
+            <fieldset>
+                <input type="submit">
+            </fieldset>
+           <?php
+echo $nb1*$nb2;
+require './index.php';
+?>
+
+             </form>
+        </body>
