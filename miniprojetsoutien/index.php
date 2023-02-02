@@ -7,19 +7,19 @@
  $result = $POST['result'];
   if(isset($_POST['calculator'])) // Je selectionne calculator
   {
-      if ($op=="Multiplication") { // Je selectionne Multiplication
+      if ($op==="Multiplication") { // Je selectionne Multiplication
           echo $nb1*$nb2;
       }
-      else if ($op=="Addition") { // Je selectionne Addition
+      else if ($op==="Addition") { // Je selectionne Addition
           echo $nb1+$nb2;
       }
-      else if ($op=="Division") { // Je selectionne Division
+      else if ($op==="Division") { // Je selectionne Division
           echo $nb1/$nb2;
       }
-      else if ($op=="Soustraction") { // Je selectionne Soustraction 
+      else if ($op==="Soustraction") { // Je selectionne Soustraction 
           echo $nb1-$nb2;
       }
-      else if($op=="Modulo") { // Je selectionne Modulo
+      else if($op==="Modulo") { // Je selectionne Modulo
           echo $nb1%$nb2;
       }
   
