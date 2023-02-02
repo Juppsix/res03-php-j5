@@ -36,6 +36,21 @@ var_dump($user);
 $newUser = new User($user["first_name"], $user["last_name"], $user["email"]);
 $newUser->setId($user["id"]);
 
-var_dump($newUser);
+var_dump($newUser);     // j'ai hydraté 
+
+$query = $db->prepare("SELECT * FROM users");
+$query->execute();
+$user = $query->fetchAll(PDO::FETCH_ASSOC);
+
+var_dump($user);
+
+
+$newUse = [];
+foreach($user as $usere){ // on parcours le tableau des users 
+    $usere10 = new User($usere["first_name"], $usere["last_name"], $usere["email"]);
+    $usere10-> setId($usere["id"]);       //créer une instance de la classe user.php 
+    $newUse[] = $usere10;
+}
+var_dump($newUse);
 
 ?>
